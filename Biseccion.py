@@ -1,6 +1,8 @@
 import math 
 import xlsxwriter
 
+#Programa para bisección
+
 def f(x): return 2 + math.cos((math.e**x)-2)-math.e**x
 def g(x): return x-(2**-x)
 def h(x): return math.e**x-x**2+(3*x)-2
@@ -67,6 +69,4 @@ presicion = float(input())
 
 raiz = biseccion(a,b,presicion,k)
 #raiz = biseccion_raices(a,b,presicion,r,b)
-#valor = ej(1.5)
-#print(valor)
 print("Raiz: ",raiz)
