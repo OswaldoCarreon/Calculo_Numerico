@@ -14,15 +14,10 @@ def Secante(f,a,b,tolerance):
         relative_error = relative_error = abs((b-a)/abs(b))
         i+=1
         
-        
-    print(i)
-    print(relative_error)
-    print(b)
-        
-    
-
+    return b
+          
 p0 = 1.3
 p1 = 2
 T = 1e-5
-
-Secante(f,p0,p1,T)
+raiz = Secante(f,p0,p1,T)
+print(raiz)
